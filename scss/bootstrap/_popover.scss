@@ -115,7 +115,7 @@
     width: $popover-arrow-width;
     margin-left: ($popover-arrow-width / -2);
     content: "";
-    border-bottom: $popover-border-width solid $popover-header-bg;
+    border-bottom: $popover-border-width solid $popover-header-image;
   }
 }
 
@@ -167,8 +167,8 @@
   margin-bottom: 0; // Reset the default from Reboot
   font-size: $font-size-base;
   color: $popover-header-color;
-  background-color: $popover-header-bg;
-  border-bottom: $popover-border-width solid darken($popover-header-bg, 5%);
+  background-color: $popover-header-image;
+  border-bottom: $popover-border-width solid darken($popover-header-image, 5%);
   $offset-border-width: calc(#{$border-radius-lg} - #{$popover-border-width});
   @include border-top-radius($offset-border-width);
 
