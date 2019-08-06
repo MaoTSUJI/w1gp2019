@@ -1280,6 +1280,10 @@ td, th {
   background: rgba(20, 2, 0, 0.8);
   transition: all 0.5s;
 }
+#header.header-scrolled li a {
+  color: white;
+  transition: all 0.5s;
+}
 
 .header-top ul {
   text-align: right;
@@ -1287,7 +1291,7 @@ td, th {
 }
 
 .header-top ul li {
-  color: #fff;
+  color: black;
   display: inline-block;
   margin-right: 20px;
 }
@@ -1414,7 +1418,7 @@ td, th {
   padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: black;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
@@ -1469,8 +1473,12 @@ td, th {
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: black;
   font-weight: 900;
+}
+
+#header.header-scrolled i {
+    color: #fff;
 }
 
 @media (max-width: 768px) {
