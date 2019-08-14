@@ -1845,17 +1845,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
 }
 
-.review-area {
-  background-color: #b68834;
-  color: #fff;
-}
-
-.review-area h1, .review-area h4 {
-  color: #fff;
-}
-
 .single-review .title {
   margin: 20px 0;
+  margin-bottom: 3rem
 }
 
 .single-review .star {
@@ -2146,4 +2138,53 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .switch-wrap p {
   margin: 0;
+}
+
+.google-map{
+    position:relative;
+    text-align: center;
+    width:100%;
+    height:0;
+    padding-top:75%;
+}
+.google-map iframe{
+    position:absolute;
+    top:0;
+    left:0;
+/*    display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+    width:100%;
+    height:100%;
+}
+
+@media (min-width: 1024px) {
+    .google-map iframe{
+      position:absolute;
+      top:0;
+      left:0;
+      width:800px;
+      height:600px;
+  }
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+#message ul li {
+  display: inline-block;
+  padding-left: 116px;
+  padding-top: 32px;
+  height: 100px;
+  text-align: left;
+}
+#message ul li img {
+  position: absolute;
+/*  left: 0;
+  top: 0;*/
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
