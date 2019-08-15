@@ -2175,6 +2175,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #message ul li {
   display: inline-block;
+  position: relative;
   padding-left: 116px;
   padding-top: 32px;
   height: 100px;
@@ -2182,9 +2183,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #message ul li img {
   position: absolute;
-/*  left: 0;
-  top: 0;*/
+  left: 0;
+  top: 0;
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+#message ul li p span {
+  display: block;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+#message ul li p {
+  display: block;
+  font-size: 32px;
+  line-height: 24px;
+  margin-bottom: 10px;
 }
