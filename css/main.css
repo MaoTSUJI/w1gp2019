@@ -2221,5 +2221,52 @@ article {
   left: 0;
   top: 0;
   width: 300px;
-  height: 400px;
+  height: 350px;
 }
+#message article.tabpage p {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 980px) {
+  #message article.tabpage {
+    margin-top: 60px;
+    padding-left: 220px;
+  }
+
+  #message article.tabpage img {
+    width: 200px;
+    height: auto;
+  }
+
+}
+@media only screen and (max-width: 480px) {
+  #message article.tabpage {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  #message article.tabpage img {
+    position: relative;
+    left: auto;
+    top: auto;
+    float: left;
+    width: 150px;
+    padding: 0 10px 10px 0;
+  }
+
+  #message article.tabpage p {
+    font-size: 15px;
+    line-height: 25px
+  }
+
+
+}
+
+
+
+
+
+
+
+
+

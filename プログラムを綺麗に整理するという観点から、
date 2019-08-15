@@ -1,0 +1,47 @@
+プログラムを綺麗に整理するという観点から、
+フォルダも似た者同士を同じフォルダに保存しておく
+
+Enum を覚える
+
+
+Googleでログインするにあたって、必要な手順
+・GoogleServiceInfoのReservedID のvalueをコピー
+・メインのinfo画面　URL 追加し、先ほどコピーしたvalueを追加
+
+
+結果発表の部分に、王冠のアイコン
+
+ラッパで、花散らすようなアニメーション
+
+self → LoginViewControllerのこと
+今回なぜ必要なのか
+　
+LoginViewControllerの中にいる時にファンクション（関数）を実行する時、
+self.caluculateNum()
+このselfは省略できる
+
+Auth in と書かれた場合は、あたかもAuthにいるかのようになるので、
+self.caluculateNum()
+のselfは省略できない
+（Authのコールバック関数の中にいる時はselfの記入は必要）
+
+var kind: MessageKind {
+        return .text(text)
+        // 前半のtextはMessageKindのプロパティの一つ
+        // 後半のテキストは構造体で作成したプロパティの一つ
+}
+
+import UIKit
+
+ let color: UIColor = UIColor.black 	// 本来の書き方
+ let color: UIColor = .black 	// 省略ver // UIColorってことは既知なので
+
+
+var kind: MessageKind {
+        return .text(text)
+        // return MessageKind.text(text) の省略ver
+
+}
+
+テストモードは、誰でも読み書きできる
+ロックモードは、特定の人だけ読み書きできる
