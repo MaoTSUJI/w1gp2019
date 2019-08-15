@@ -56,6 +56,7 @@ body {
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
+  text-align: center;
 }
 
 ol, ul {
@@ -2180,6 +2181,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 32px;
   height: 100px;
   text-align: left;
+  margin-right: 30px;
 }
 #message ul li img {
   position: absolute;
@@ -2200,6 +2202,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 32px;
   line-height: 24px;
   margin-bottom: 10px;
+}
+#message .tabs {
+  text-align: center;
 }
 
 #message article.tabpage.active {
