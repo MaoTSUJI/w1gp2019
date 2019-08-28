@@ -2158,6 +2158,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
+#about a {
+  color: #b68834;
+  font-size: 14px;
+}
+
 #message ul li {
   display: inline-block;
   position: relative;
