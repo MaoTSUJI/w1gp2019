@@ -59,7 +59,7 @@ body {
   text-align: center;
 }
 
-ol, ul {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1795,7 +1795,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .video-right {
   background: url(../img/video-bg.jpg) no-repeat center;
   background-size: cover;
-  height: 350px;
   border-radius: 10px;
 }
 
@@ -1813,6 +1812,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 100px;
   }
 }
+
+
 
 .menu-area {
   background: url(../img/menu-bg.jpg) center;
