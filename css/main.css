@@ -2171,7 +2171,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 100px;
   text-align: left;
   margin-right: 30px;
+  cursor: pointer;
 }
+.hover:hover{
+  transition: opacity 0.3s;
+  opacity: 0.5;
+}
+
 #message ul li img {
   position: absolute;
   left: 0;
@@ -2260,10 +2266,76 @@ article {
   font-size: 14px;
 }
 
+#schedule .p-program-timeline {
+  list-style: none;
+  margin-top: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 980px) {
+  #schedule .p-program-timeline {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #schedule .p-program-timeline {
+    width: 100%;
+    margin: auto;
+  }
+}
 
 
+#schedule .p-program-timeline__item {
+  position: relative;
+}
+#schedule .p-program-timeline__dl {
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
 
+#schedule .p-program-timeline__dl>dt {
+  width: 80px;
+  background-color: #c1a250;
+  font-family: "YuMincho", "Yu Mincho", "游明朝", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.66667;
+  color: #fff;
+  text-align: center;
+}
 
+#schedule .p-program-timeline__dl>dd {
+  padding: 3px 20px;
+  background-color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.66667;
+}
 
+#schedule .p-program-timeline__dl>dt, .p-program-timeline__dl>dd {
+  display: table-cell;
+  padding: 3px;
+  vertical-align: middle;
+}
+
+#schedule dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+
+#schedule .p-program-timeline__item+.p-program-timeline__item:before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  bottom: 100%;
+  width: 2px;
+  height: 15px;
+  margin-left: -1px;
+  background-color: #dedede;
+}
 
 
