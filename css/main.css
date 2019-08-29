@@ -2195,11 +2195,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #message .tabs {
   text-align: center;
 }
-
+#message article.tabpage {
+  display: none;
+}
 #message article.tabpage.active {
   display: block;
-
 }
+
 #message article.tabpage {
   /*display: none;*/
   margin-top: 60px;
@@ -2252,10 +2254,11 @@ article {
     font-size: 15px;
     line-height: 25px
   }
-
-
 }
 
+.notes {
+  font-size: 14px;
+}
 
 
 
