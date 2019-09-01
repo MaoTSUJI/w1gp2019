@@ -15,16 +15,20 @@
 		<title>W-1GP2019</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
- 
-			<link rel="stylesheet" href="css/main.css">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
 
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
 
-			<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+		<!-- 住所の自動表示 -->
+		<script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+
 
 
 		</head>
@@ -148,7 +152,7 @@
 													<ul>
 														<li class="mb-1">
 															<span class="col-form-label mr-3">1) 競技種目</span>
-															<span class="col-form-label">下記種目で実施する</span>
+															<span class="col-form-label">下記種目で実施する。 (1人1種目)</span>
 																<table class="table table-sm table-hover table-bordered mt-2">
 																	<thead>
 																		<tr>
@@ -240,6 +244,27 @@
 
 											</div>
 										</div>
+
+										<div class="form-group row">
+											<li class="col-sm-2 col-form-label">参加費用</li>
+											<div class="col-sm-10">
+												<p class="form-control-plaintext">3000円（1人1種目）</p>
+												<table class="table table-sm table-bordered mt-2">
+													<tbody>
+														<tr>
+															<td>大会Tシャツ　<a class="link" href="">>> デザイン</a></td>
+															<td>＋1000円</td>
+														</tr>
+														<tr>
+															<td>大会DVD　<a class="link" href="">>> 後日発送予定</a></td>
+															<td>＋1000円</td>
+														</tr>
+													</tbody>
+												</table>
+												<p class="form-control-plaintext">当日受付時にお支払い</p>
+											</div>
+										</div>
+
 									</ol>
 
 									<p class="notes">※プログラムの進行により多少異なる場合があります。ご了承のほどよろしくお願いいたします。</p>
@@ -444,7 +469,7 @@
 						<div class="col-lg-12">
 							<div class="single-menu">
 								<div class="title-div justify-content-between d-flex">
-									<h4>Comming soon</h4>
+									<h4>Coming soon</h4>
 								</div>
 							</div>
 						</div>
@@ -469,9 +494,178 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Comming soon</h4>
-								</div>
+								<form action="">
+									<ul>
+										<li class="col-sm-12 col-form-label"><i class="fas fa-square icon-link"></i>　基本情報入力</li>
+											<div class="term-content">
+												<div class="form-group row">
+													<label for="inputName" class="col-sm-2 col-form-label">名前</label>
+													<div class="col-sm-5">
+														<input type="text" class="form-control" id="name" placeholder="山田　太郎">
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label for="inputNameFurigana" class="col-sm-2 col-form-label">フリガナ</label>
+													<div class="col-sm-5">
+														<input type="text" class="form-control" id="nameFurigana" placeholder="ヤマダ　タロウ">
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label for="inputAge" class="col-sm-2 col-form-label">年齢</label>
+													<div class="col-sm-5">
+														<select name="age" id ="age" class="form-control">
+																<option value="">選択してください</option>
+																<option value="20歳未満">20歳未満</option>
+																<option value="20-29歳">20-29歳</option>
+																<option value="30-39歳">30-39歳</option>
+																<option value="40-49歳">40-49歳</option>
+																<option value="50-59歳">50-59歳</option>
+																<option value="60-69歳">60-69歳</option>
+																<option value="70-79歳">70-79歳</option>
+																<option value="80歳以上">80歳以上</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label for="inputEmail" class="col-sm-2 col-form-label">メールアドレス</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="email" placeholder="yamada@gmail.com">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="inputZip" class="col-sm-2 col-form-label">郵便番号</label>
+													<div class="col-sm-4">
+														<input type="text" class="form-control" id="zipcode" placeholder="000-0000" name="zip11" size="10" max-length="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" >
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="inputAddress" class="col-sm-2 col-form-label">住所</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="address" placeholder="大阪府大阪市北区1-1-1" name="addr11" size="60" >
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="inputTel" class="col-sm-2 col-form-label">電話番号</label>
+													<div class="col-sm-10">
+														<input type="tel" class="form-control" id="tel" placeholder="090-1234-5678">
+													</div>
+												</div>
+											</div>
+
+											<li class="col-sm-12 col-form-label"><i class="fas fa-square icon-link"></i>　出場種目入力</li>
+											<div class="term-content">
+												<fieldset class="form-group">
+													<div class="row">
+														<legend class="col-form-label col-sm-2 pt-0">出場種目</legend>
+														<div class="col-sm-10">
+															<div class="form-check">
+																<input class="form-check-input" type="radio" name="gridRadios" id="dentouA" value="dentouA">
+																<label class="form-check-label" for="dentouA">
+																伝統拳術A
+																</label>
+															</div>
+															<div class="form-check">
+																<input class="form-check-input" type="radio" name="gridRadios" id="dentouB" value="dentouB">
+																<label class="form-check-label" for="dentouB">
+																伝統拳術B
+																</label>
+															</div>
+															<div class="form-check disabled">
+																<input class="form-check-input" type="radio" name="gridRadios" id="dentouC" value="dentouC">
+																<label class="form-check-label" for="dentouC">
+																伝統拳術C
+																</label>
+															</div>
+															<div class="form-check disabled">
+																<input class="form-check-input" type="radio" name="gridRadios" id="dentouK" value="dentouK">
+																<label class="form-check-label" for="dentouK">
+																伝統器械
+																</label>
+															</div>
+														</div>
+													</div>
+												</fieldset>
+											
+												<div class="form-group row">
+													<label for="inputName" class="col-sm-2 col-form-label">拳種</label>
+													<div class="col-sm-5">
+														<input type="text" class="form-control" id="name" placeholder="査拳">
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label for="inputCareer" class="col-sm-2 col-form-label">武術歴</label>
+													<div class="col-sm-5">
+														<select name="career" id ="career" class="form-control">
+																<option value="">選択してください</option>
+																<option value="1年未満">1年未満</option>
+																<option value="1-3年">1-5年</option>
+																<option value="6-10年">6-10年</option>
+																<option value="10-20年">10-20年</option>
+																<option value="20年以上">20年以上</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label for="inputName" class="col-sm-2 col-form-label">所属チーム</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="name" placeholder="大阪武術隊">
+													</div>
+												</div>
+
+												<div class="form-group row">
+													<label for="inputName" class="col-sm-2 col-form-label">老師</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="name" placeholder="田中　二郎">
+													</div>
+												</div>
+
+											</div>
+
+
+											<li class="col-sm-12 col-form-label"><i class="fas fa-square icon-link"></i>　大会規約・競技規約</li>
+											<div class="term-content">
+												<div id="scroll" class="protocol-box">
+													<p><strong>大会規約</strong></p>
+													<ol>
+														<li>本大会は国内の関連する全ての法律を遵守し、実施されるものとする。</li>
+														<li>主催者は大会規約の他、武術套路競技規則に伴って大会を開催します。</li>
+														<li>主催者は下記の事項に置いて一切の責任を負いません。<br>
+															(1) 疾病及びその他の事故（応急処置を除く）<br>
+															(2) 紛失及び毀損<br>
+															(3) 公共交通機関及び道路事情等による遅刻
+														</li>
+														<li>主催者は大会を安全に実施するため、競技エリアにおいて規制を行います。</li>
+														<li>主催者の指示に従ってください。従わない参加者は出場・競技を中止させます。</li>
+														<li>大会中の映像・写真等のSNS等への掲載権と肖像権は主催者に属します。</li>
+														<li>主催者は個人情報の重要性を認識し、個人情報の保護に関する法律及び関連法令等を遵守し、主催者の個人情報保護方針に基づき、個人情報を取扱います。</li>
+														<li>主催者は大会開催中に被った傷害または疾病に対しては、応急処置まで行います。</li>
+														<li>主催者は大会開催中に負傷したり事故に遭遇したり、または発病した場合には応急処置、及び必要な場合は緊急搬送をいたします。</li>
+														<li>この場合、搬送先の病院に対して参加者の診療情報を求めます。</li>
+														<li>なお、応急処置にあたっては、救命活動を最優先とするため、異性が対応する場合があります。（AEDの使用、胸骨圧迫等）</li>
+													</ol>
+													<p><strong>競技規約</strong></p>
+													<ol>
+														<li>競技は、「武術套路競技規則」に基づいて実施</li>
+														<li>競技は絨毯を敷設したコート上で行い、広さは14m×8mとする。周囲に5cm幅のタッチラインを引く。</li>
+														<li>剣、刀、棍などの器械は、長さ、太さ、重量を制限しない。剣、刀については、鋼鉄製の材質のものの使用を禁止する。</li>
+													</ol>
+												</div>
+												
+														<input type="checkbox" id="check" /><label for="check">　上記規約に同意します</label>
+														
+														<input type="submit" href="" id="to-form" class="toform-btn toform-border" value="送信">
+
+											</div>
+
+										</div>
+									</ul>
+								</form>
+
 							</div>
 						</div>
 					</div>
@@ -486,36 +680,6 @@
 					<div class="row">
 						<div class="col-lg-5 col-md-6 col-sm-6">
 							<div class="single-footer-widget">
-								<h6>About Us</h6>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
-								</p>
-								<p class="footer-text">
-									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-5  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>Newsletter</h6>
-								<p>Stay update with our latest</p>
-								<div class="" id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-										<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-			                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-			                            	<div style="position: absolute; left: -5000px;">
-												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-											</div>
-
-										<div class="info pt-20"></div>
-									</form>
-								</div>
-							</div>
-						</div>						
-						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-							<div class="single-footer-widget">
 								<h6>Follow Us</h6>
 								<p>Let us be social</p>
 								<div class="footer-social d-flex align-items-center">
@@ -523,9 +687,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 									<a href="#"><i class="fa fa-twitter"></i></a>
 									<a href="#"><i class="fa fa-dribbble"></i></a>
 									<a href="#"><i class="fa fa-behance"></i></a>
-								</div>
+								</div>						
 							</div>
-						</div>							
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<p> ©︎2019 W-1GP2019実行委員会</p>
+							</div>
+						</div>												
 					</div>
 				</div>
 			</footer>	

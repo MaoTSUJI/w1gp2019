@@ -218,6 +218,7 @@ td, th {
   border-top: 1px dotted #eee;
 }
 
+/* あとで選別して消す！ */
 .button-group-area .genric-btn {
   margin-right: 10px;
   margin-top: 10px;
@@ -459,6 +460,7 @@ td, th {
   border: 1px solid transparent;
   cursor: not-allowed;
 }
+/* ここまであとで選別して消す！ */
 
 .generic-blockquote {
   padding: 30px 50px 30px 30px;
@@ -1458,7 +1460,7 @@ td, th {
   margin: 0;
 }
 
-/* Mobile Nav Toggle */
+/* Mobile Nav Toggle  必須なやつ */
 #mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -1581,6 +1583,7 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
+/* ここまで消したらあかん */
 
 .section-gap {
   padding: 120px 0;
@@ -2338,4 +2341,63 @@ article {
   background-color: #dedede;
 }
 
+.icon-link {
+  color: #b68834;
+}
 
+#entry .term-content {
+  margin: 0 auto;
+   width: 80%;
+}
+#scroll{
+  font-size: 12px;
+  overflow: auto;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.toform-btn {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  outline: none;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: .8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+}
+.toform-border {
+  color: #b68834;
+  border: 1px solid #b68834;
+  background: #fff;
+  cursor: default;
+}
+
+.toform-border:hover {
+  color: #b68834;
+  text-decoration: none;
+}
+
+.toform-full {
+  color: #fff;
+  background: #b68834;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.toform-full:hover {
+  color: #b68834;
+  border: 1px solid #b68834;
+  background: #fff;
+}

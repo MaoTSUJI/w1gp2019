@@ -268,7 +268,22 @@ $(document).ready(function(){
         });      
 
 
-  
+  // デフォルトでボタンを無効化 
+    $('#to-form').attr('disabled', 'disabled');
+
+  // チェックボックスにチェックされたら、ボタンを有効化
+    $('#check').click(function() {
+      if ( $(this).prop('checked') == false ) {
+        $('#to-form').attr('disabled', 'disabled');
+        $('#to-form').removeClass('toform-full');
+        $('#to-form').addClass('toform-border');
+
+      } else {
+        $('#to-form').removeAttr('disabled');
+        $('#to-form').removeClass('toform-border');
+        $('#to-form').addClass('toform-full');
+      }
+    });
 
 
 
