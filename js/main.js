@@ -267,12 +267,22 @@ $(document).ready(function(){
             $('#mc_embed_signup').find('form').ajaxChimp();
         });      
 
+  // Tシャツ購入にチェック入れた時、サイズ選択を表示
+    $('#Tsirt').click(function() {
+      if ( $(this).prop('checked') == false ) {
+        $('#size').addClass('choosen');
+
+      } else {
+        $('#size').removeClass('choosen');
+      }
+    });
+
 
   // デフォルトでボタンを無効化 
     $('#to-form').attr('disabled', 'disabled');
 
   // チェックボックスにチェックされたら、ボタンを有効化
-    $('#check').click(function() {
+    $('#agreement').click(function() {
       if ( $(this).prop('checked') == false ) {
         $('#to-form').attr('disabled', 'disabled');
         $('#to-form').removeClass('toform-full');

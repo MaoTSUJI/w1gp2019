@@ -2345,6 +2345,14 @@ article {
   color: #b68834;
 }
 
+.choose-size {
+  display: block;
+}
+
+.choosen {
+  display: none;
+}
+
 #entry .term-content {
   margin: 0 auto;
    width: 80%;
@@ -2401,3 +2409,8 @@ article {
   border: 1px solid #b68834;
   background: #fff;
 }
+
+.form-check {
+  display: inline-block;
+}
+
