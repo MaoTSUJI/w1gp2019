@@ -2,17 +2,19 @@ $(document).ready(function(){
 
 
 
-  $(".hover").on("click", function() {
+  $("#misaki-tag").on("click", function() {
 
-    console.log($(this).data("data-tab"));
+    $('#misaki').addClass("active");
+    $('#mabuchi').removeClass("active");
 
-      // 選択したdata-tab に activeクラスを追加
-      $(this).addClass("active");
+  });
+
+  $("#mabuchi-tag").on("click", function() {
+
+    $('#mabuchi').addClass("active");
+    $('#misaki').removeClass("active");
+
+});
 
 
-      // 他のdata-tab  の activeクラスを削除
-      // $(".tabpage").removeClass("active");
-
-    });
-   
 });
