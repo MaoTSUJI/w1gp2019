@@ -2366,13 +2366,13 @@ article {
   padding: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-
+  margin: 10px 0;
 }
 
 .toform-btn {
   border-radius: 20px;
   display: block;
-  margin: auto;
+  margin: 15px auto;
   outline: none;
   line-height: 40px;
   padding: 0 30px;
@@ -2414,3 +2414,8 @@ article {
   display: inline-block;
 }
 
+.required {
+  color: red;
+  font-size: inherit;
+  margin-left: 5px;
+}

@@ -500,21 +500,21 @@
 										<li class="col-sm-12 col-form-label"><i class="fas fa-square icon-link"></i>　基本情報入力</li>
 											<div class="term-content">
 												<div class="form-group row">
-													<label for="inputName" class="col-sm-2 col-form-label">名前</label>
+													<label for="inputName" class="col-sm-2 col-form-label">名前<span class="required">*</span></label>
 													<div class="col-sm-5">
-														<input type="text" class="form-control" id="name" placeholder="山田　太郎">
+														<input type="text" name="name" class="form-control" id="name" placeholder="山田　太郎">
 													</div>
 												</div>
 
 												<div class="form-group row">
-													<label for="inputNameFurigana" class="col-sm-2 col-form-label">フリガナ</label>
+													<label for="inputNameFurigana" class="col-sm-2 col-form-label">フリガナ<span class="required">*</span></label>
 													<div class="col-sm-5">
-														<input type="text" class="form-control" id="nameFurigana" placeholder="ヤマダ　タロウ">
+														<input type="text" name="nameFurigana" class="form-control" id="nameFurigana" placeholder="ヤマダ　タロウ">
 													</div>
 												</div>
 
 												<div class="form-group row">
-													<label for="inputAge" class="col-sm-2 col-form-label">年齢</label>
+													<label for="inputAge" class="col-sm-2 col-form-label">年齢<span class="required">*</span></label>
 													<div class="col-sm-5">
 														<select name="age" id ="age" class="form-control">
 																<option value="">選択してください</option>
@@ -531,27 +531,27 @@
 												</div>
 
 												<div class="form-group row">
-													<label for="inputEmail" class="col-sm-2 col-form-label">メールアドレス</label>
+													<label for="inputEmail" class="col-sm-2 col-form-label">メールアドレス<span class="required">*</span></label>
 													<div class="col-sm-10">
-														<input type="text" class="form-control" id="email" placeholder="yamada@gmail.com">
+														<input type="text" name="email" class="form-control" id="email" placeholder="yamada@gmail.com">
 													</div>
 												</div>
 												<div class="form-group row">
-													<label for="inputZip" class="col-sm-2 col-form-label">郵便番号</label>
+													<label for="inputZip" class="col-sm-2 col-form-label">郵便番号<span class="required">*</span></label>
 													<div class="col-sm-4">
-														<input type="text" class="form-control" id="zipcode" placeholder="000-0000" name="zip11" size="10" max-length="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" >
+														<input type="text" name="zip11" class="form-control" id="zipcode" placeholder="000-0000" size="10" max-length="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" >
 													</div>
 												</div>
 												<div class="form-group row">
-													<label for="inputAddress" class="col-sm-2 col-form-label">住所</label>
+													<label for="inputAddress" class="col-sm-2 col-form-label">住所<span class="required">*</span></label>
 													<div class="col-sm-10">
-														<input type="text" class="form-control" id="address" placeholder="大阪府大阪市北区1-1-1" name="addr11" size="60" >
+														<input type="text" name="addr11" class="form-control" id="address" placeholder="大阪府大阪市北区1-1-1" size="60" >
 													</div>
 												</div>
 												<div class="form-group row">
-													<label for="inputTel" class="col-sm-2 col-form-label">電話番号</label>
+													<label for="inputTel" class="col-sm-2 col-form-label">電話番号<span class="required">*</span></label>
 													<div class="col-sm-10">
-														<input type="tel" class="form-control" id="tel" placeholder="090-1234-5678">
+														<input type="tel" name="tel" class="form-control" id="tel" placeholder="090-1234-5678">
 													</div>
 												</div>
 											</div>
@@ -560,23 +560,23 @@
 											<div class="term-content">
 												<fieldset class="form-group">
 													<div class="row">
-														<legend class="col-form-label col-sm-2 pt-0">出場種目</legend>
+														<legend class="col-form-label col-sm-2 pt-0">出場種目<span class="required">*</span></legend>
 														<div class="col-sm-10">
 
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="radio" name="inlineRadioOptions" id="dentouA" value="dentouA">
+																<input class="form-check-input" type="radio" name="dept" id="dentouA" value="dentouA">
 																<label class="form-check-label" for="dentouA">伝統拳術A</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="radio" name="inlineRadioOptions" id="dentouB" value="dentouB">
+																<input class="form-check-input" type="radio" name="dept" id="dentouB" value="dentouB">
 																<label class="form-check-label" for="dentouB">伝統拳術B</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="radio" name="inlineRadioOptions" id="dentouC" value="dentouC">
+																<input class="form-check-input" type="radio" name="dept" id="dentouC" value="dentouC">
 																<label class="form-check-label" for="dentouC">伝統拳術C</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="radio" name="inlineRadioOptions" id="dentouK" value="dentouK">
+																<input class="form-check-input" type="radio" name="dept" id="dentouK" value="dentouK">
 																<label class="form-check-label" for="dentouK">伝統器械</label>
 															</div>
 
@@ -585,9 +585,9 @@
 												</fieldset>
 											
 												<div class="form-group row">
-													<label for="inputName" class="col-sm-2 col-form-label">拳種</label>
+													<label for="inputName" class="col-sm-2 col-form-label">拳種<span class="required">*</span></label>
 													<div class="col-sm-5">
-														<input type="text" class="form-control" id="name" placeholder="査拳">
+														<input type="text" class="form-control" name="nameStyle" id="nameStyle" placeholder="査拳">
 													</div>
 												</div>
 
@@ -608,14 +608,14 @@
 												<div class="form-group row">
 													<label for="inputName" class="col-sm-2 col-form-label">所属チーム</label>
 													<div class="col-sm-10">
-														<input type="text" class="form-control" id="name" placeholder="大阪武術隊">
+														<input type="text" class="form-control" name="team" id="name" placeholder="大阪武術隊">
 													</div>
 												</div>
 
 												<div class="form-group row">
 													<label for="inputName" class="col-sm-2 col-form-label">老師</label>
 													<div class="col-sm-10">
-														<input type="text" class="form-control" id="name" placeholder="田中　二郎">
+														<input type="text" class="form-control" name="teacher" id="teacher" placeholder="田中　二郎">
 													</div>
 												</div>
 
@@ -628,8 +628,8 @@
 													
 													<div class="col-sm-10 d-flex align-items-center">
 														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="checkbox" id="Tsirt" value="Tsirt">
-															<label class="form-check-label" for="Tsirt"> 大会Tシャツ購入希望</label>
+															<input class="form-check-input" type="checkbox" name="Tshirt" id="Tshirt" value="Tshirt">
+															<label class="form-check-label" for="Tshirt"> 大会Tシャツ購入希望</label>
 														</div>
 													</div>
 
@@ -639,17 +639,17 @@
 													<div class="row">
 														<legend class="col-form-label col-sm-2 pt-0"></legend>
 														<div class="col-sm-10">
-															<span>サイズ　</span>
+															<span>サイズ　<span class="required">*</span></span>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="radio" name="inlineRadioOptions" id="sizeS" value="sizeS">
+																<input class="form-check-input" type="radio" name="size" id="sizeS" value="sizeS">
 																<label class="form-check-label" for="sizeS">S</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="radio" name="inlineRadioOptions" id="sizeM" value="sizeM">
+																<input class="form-check-input" type="radio" name="size" id="sizeM" value="sizeM">
 																<label class="form-check-label" for="sizeM">M</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="radio" name="inlineRadioOptions" id="sizeL" value="sizeL">
+																<input class="form-check-input" type="radio" name="size" id="sizeL" value="sizeL">
 																<label class="form-check-label" for="sizeL">L</label>
 															</div>
 
@@ -661,7 +661,7 @@
 													<label for="inputTshirt" class="col-sm-2 col-form-label">DVD</label>
 													<div class="col-sm-10 d-flex align-items-center">
 														<div class="form-check form-check-inline">
-															<input class="form-check-input" type="checkbox" id="dvd" value="dvd">
+															<input class="form-check-input" type="checkbox" name="dvd" id="dvd" value="dvd">
 															<label class="form-check-label" for="dvd"> 大会DVD購入希望</label>
 														</div>
 													</div>
@@ -701,9 +701,9 @@
 													</ol>
 												</div>
 												
-														<input type="checkbox" id="agreement" /><label for="agreement">　上記規約に同意します</label>
+														<input type="checkbox" name="agreement" id="agreement" /><label for="agreement">　上記規約に同意します。<span class="required">*</span></label>
 														
-														<input type="submit" href="" id="to-form" class="toform-btn toform-border" value="送信">
+														<input type="submit" href="" id="to-form" class="toform-btn toform-border" value="申し込む">
 
 											</div>
 
